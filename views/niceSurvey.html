@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<div class="container-md p-3 my-3 border .bg-light  .text-dark " id="survey">
+    <h1>Canadian Survey</h1>
+    <form>
+      <h2> What fruits do you like? </h2>
+      I like:<br>
+      <input type="text" name="fruit" placeholder="fruit name..." required />
+      <br>
+      <br>
+      <h2> What color do you like? </h2>
+	    I like:<br>
+		  <input type="checkbox" name="color" value="Red"> Red<br>
+		  <input type="checkbox" name="color" value="Green"> Green<br>
+      <input type="checkbox" name="color" value="Blue"> Blue<br>
+      <br>
+      <h2>What is your favorite animal?</h2>
+      I like:<br>
+      <select name="animal">
+			  <option value="Cat" selected="selected">Cat</option>
+			  <option value="Dog">Dog</option>
+			  <option value="Turtle">Turtle</option>
+      </select>
+      <br>
+
+      <h2>From which country do you belong?</h2>
+      <input type="text" id="countaries" name="country" list="countariesList" required/><!--your input textbox-->
+      <datalist id="countariesList">
+      <option value="USA" />
+      <option value="Canada" />
+      <option value="London" />
+      <option value="France" />
+      <option value="Italy" />
+      <option value="Turkey" />
+      <option value="Thailand" />
+      <option value="Malaysia" />
+      <option value="Singapore" />
+      <option value="Japan" />
+      </datalist>
+
+      <br>    
+      
+      <h2>What is your gender?</h2>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      <br>    
+      
+      <h2>What is your age?</h2>
+      <input type="number" id="quantity" name="age" min="1" max="50" required>
+      <br>
+
+
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
